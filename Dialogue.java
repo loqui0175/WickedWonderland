@@ -15,8 +15,13 @@ public class Dialogue {
     };
 
     static String[] introCinderella = {
-        "Cinderella enters the Shattered Palace.\nDarkness stretches before you, twisting what was once a place of beauty into a prison of shadows."
+        "Cinderella enters the Shattered Palace.\nDarkness stretches before you, twisting what was once a place of beauty into a prison of shadows.", 
+        "An eerie call echoes throughout the palace, reverberating throughout the gilded walls.\n\n",
     };
+
+    static final String CINDERELLA_ATTACKS = 
+    "1. Glass Shard Strike [Mana cost: 0] [Damage: 10]\n2. Enchanted Resilience [Mana cost: 30] [Health +20] [Damage: 20] \n3. Illusionary Escape Enchanted Resilience [Mana cost: 50]";
+
 
     static String[] introSnowWhite = {
         "Snow White stands at the edge of the Enchanted Forest.\nThe once vibrant trees are now blackened, their twisted branches like claws reaching out for her."
@@ -35,9 +40,6 @@ public class Dialogue {
             System.out.println(Text.centerText(line));
         }
     }
-
-
-    
 
 }
 

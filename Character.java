@@ -11,8 +11,8 @@ public abstract class Character {
         this.name = name;
         this.health = health;
         this.mana = mana;
-        this.maxHealth = health; // Set max health based on initial value
-        this.maxMana = mana;     // Set max mana based on initial value
+        this.maxHealth = health; 
+        this.maxMana = mana;    
     }
 
     // Abstract methods to be implemented by subclasses for character-specific skills
