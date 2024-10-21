@@ -27,6 +27,10 @@ public class Dialogue {
         "Snow White stands at the edge of the Enchanted Forest.\nThe once vibrant trees are now blackened, their twisted branches like claws reaching out for her."
     };
 
+    static final String SNOW_WHITE_ATTACKS = 
+    "1. Poisoned Apple Strike [Mana cost: 10] [Damage: 20]\n2. Enchanted Healing [Mana cost: 15] [Health +15]\n3. Forest's Aid [Mana cost: 20] [Damage: 30]";
+
+
     static String[] battleStart = {
         "A shadowy figure appears!\nPrepare for battle!",
     };
