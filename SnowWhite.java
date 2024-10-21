@@ -3,12 +3,11 @@ public class SnowWhite extends Character {
         super("Snow White", 200, 100);
     }
 
-    public static final String SNOW_WHITE_ATTACKS = 
-    "1. Poisoned Apple Strike\n2. Enchanted Healing\n3. Forest's Aid";
 
     @Override
     public void specialSkill1(Enemy enemy) {
         System.out.println("Snow White uses Poisoned Apple Strike!");
+        enemy.receiveDamage(20);
         useMana(10);
     }
 
@@ -22,11 +21,22 @@ public class SnowWhite extends Character {
     @Override
     public void specialSkill3(Enemy enemy) {
         System.out.println("Snow White uses Forest's Aid!");
+        enemy.receiveDamage(30);
         useMana(20);
     }
 
     public void applyPoisonEffect(Enemy enemy) {
         System.out.println("The poison weakens " + enemy.getName() + " over time!");
-        enemy.receiveDamage(10);
+        enemy.receiveDamage(15);
+    }
+
+    @Override
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    @Override
+    public boolean isAlive() {
+        return health > 0;
     }
 }
